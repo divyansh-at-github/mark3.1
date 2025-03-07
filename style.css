@@ -29,12 +29,12 @@ body {
 .todo-input{
   display: flex;
   gap: 0.5rem;
-  height: 8vh
+  height: 8vh;
 }
 .todo-input input{
   padding: 0.3rem;
   border: 2px solid black;
-  width: 31vw;
+  width: 34.6vw;
   border-radius: 0.35rem;
   font-size: 1.2vw;
 }
@@ -47,7 +47,6 @@ body {
   border-radius: 0.35rem;
 }
 .todolists{
-  /* border: 1px solid black; */
   min-height: 7vh;
   list-style-type: none;
   display: flex;
@@ -96,6 +95,37 @@ body {
     gap: 0.5rem;
     height: 20vh;
     border:1px solid black;
+  }
+  .todo-input input{
+    width: 100%;
+    height: 5vh;
+    font-size: 5vw;
+  }
+  .btn{    
+    font-size: 5vw;
+  }
+  .list-wrapper-main{
+    flex-direction: column;
+    gap: 0rem;
+  }
+  
+  .li-wrapper span{
+    font-size: 5vw;
+  }
+  .del-btn{
+    font-size: 5vw;
+  }
+}
+@media (max-width:425px) {
+  .app-container{
+    min-height: 70vh;
+    width: 90vw;
+  }
+  .todo-input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 25vh;
   }
   .todo-input input{
     width: 100%;
